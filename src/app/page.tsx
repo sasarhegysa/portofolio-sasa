@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-// Hapus import next/image yang menyebabkan error
-// import Image from "next/image"; 
 import { 
   Github, Linkedin, Mail, Code, PenTool, Trophy, 
   BookOpen, Users, GraduationCap, Briefcase, 
@@ -10,7 +8,6 @@ import {
 } from 'lucide-react';
 
 const Portfolio = () => {
-  // State untuk mengatur bahasa ('id' untuk Indonesia, 'en' untuk Inggris)
   const [lang, setLang] = useState<'id' | 'en'>('id');
 
   // Database konten
@@ -27,7 +24,7 @@ const Portfolio = () => {
         title1: "Software Engineer.", 
         title2: "Building Scalable Systems.",
         
-        desc: <>Saya <strong>Rhegysa</strong>. Mahasiswi Teknik Informatika (Semester 5) penerima Beasiswa Penuh di STIKOM PGRI Banyuwangi. Fokus membangun sistem web berskala industri (SaaS) dengan arsitektur yang efisien menggunakan <strong>Next.js, Node.js, dan MySQL</strong>.</>,
+        desc: <>Saya <strong>Rhegysa</strong>. Mahasiswi Teknik Informatika Semester 5 penerima Beasiswa Penuh di STIKOM PGRI Banyuwangi. Fokus membangun sistem web berskala industri (SaaS) dengan arsitektur yang efisien menggunakan <strong>Next.js, Node.js, dan MySQL</strong>.</>,
         
         btn_projects: "Lihat Sistem",
         btn_pubs: "Publikasi (3)"
@@ -35,10 +32,10 @@ const Portfolio = () => {
       stats: {
         gpa_label: "IPK Terakhir (Sem 1-4)",
         comp_title: "Sorotan Kompetisi",
-        comp_1: <><strong>Top 10 Finalis Int'l</strong> Business Plan (Proxocoris 2025)</>,
+        comp_1: <><strong>Top 10 Finalis Internasional</strong> Business Plan (Proxocoris 2025)</>,
         comp_2: <><strong>Juara Harapan 2 Nasional</strong> Business Plan (Corisindo 2024)</>,
-        grad_title: "Lulusan Terbaik SMK #1",
-        grad_desc: "(2023) - Desain Komunikasi Visual"
+        grad_title: "Lulusan Terbaik Jurusan Desain Komunikasi Visual",
+        grad_desc: "SMK Al-Munawwir IIBS Singojuruh (2023)"
       },
       section_titles: {
         edu: "Pendidikan",
@@ -47,8 +44,8 @@ const Portfolio = () => {
         projects_sub: "Implementasi arsitektur perangkat lunak untuk solusi nyata.",
         research: "Riset & Publikasi",
         research_sub: "Kontribusi ilmiah dalam Transformasi Digital dan Audit Sistem (2025).",
-        gallery: "Arsip Kreatif", 
-        gallery_sub: "Dokumentasi visual dan aset pendukung proyek.",
+        gallery: "Arsip Akademik", 
+        gallery_sub: "Dokumentasi hasil lomba.",
         comp_detail: "Detail Kompetisi",
         collab: "Mari Berkolaborasi."
       },
@@ -74,15 +71,20 @@ const Portfolio = () => {
         author_1: "Penulis Pertama",
         author_3: "Penulis Ketiga",
         author_4: "Penulis Keempat",
-        desc_1: "Publikasi Jurnal Ilmiah (2025). Tantangan dan Peluang Penerapan Transformasi Digital Menggunakan RACE Planning Framework.",
-        desc_2: "Publikasi Jurnal Ilmiah (2025). Audit Pengendalian Batasan Sistem Informasi Manajemen Keuangan Menggunakan Kerangka Kerja COSO.",
-        desc_3: "Publikasi Jurnal Ilmiah (2025). Analisis SWOT Sebagai Dasar Perencanaan Pengadaan Cloud Storage Untuk Transformasi Digital Di PT Lokabyte Digital Innovations."
+        desc_1: "Publikasi Jurnal Ilmiah (2025). Penelitian ini dilakukan untuk mengevaluasi tantangan dan peluang transformasi digital pada PT Lokabyte Digital Innovations menggunakan pendekatan RACE Planning Framework yang mencakup tahapan Reach, Act, Convert, dan Engage. Penelitian menggunakan metode deskriptif kualitatif dengan teknik observasi kanal digital, wawancara informal, serta analisis S.W.O.T sebagai dasar pemetaan kondisi perusahaan.",
+        desc_2: "Publikasi Jurnal Ilmiah (2025). Evaluasi pengendalian batasan sistem informasi manajemen keuangan di PT Lokabyte Digital Innovations perlu dilakukan untuk meminimalisir terjadinya risiko. Pendekatan dilakukan secara langsung pada sistem informasi menggunakan audit through computer dengan berfokus pada tahapan pengendalian batasan (boundary control).",
+        desc_3: "Publikasi Jurnal Ilmiah (2025). Penelitian ini bertujuan merancang  strategi  pengadaan cloud  storagebagi  PT  Lokabyte  Digital  Innovations dengan menggunakan pendekatan analisis SWOT. Metode yang digunakan bersifat deskriptif kualitatif, dengan teknik pengumpulan data berupa observasi sistem yang sedang  berjalan,  wawancara  internal,  serta  studi  literatur  pendukung.",
+        link_1: "https://ojs.stmikpontianak.ac.id/sisfotenika/article/view/556/164", // Ganti dengan link Google Scholar/Jurnal asli
+        link_2: "https://ojs.stmikpontianak.ac.id/sisfotenika/article/view/535/158",
+        link_3: "https://ojs.stikombanyuwangi.ac.id/index.php/jikom/article/view/245/150"
       },
       comp: {
-        c1_title: "LOKAVEST (2025)",
-        c1_desc: "\"LOKAVEST: TRANSFORMASI DIGITAL UMKM MELALUI AUTO-INVEST DAN DIGITAL MARKETING BERBASIS GOOGLE ADS DAN META ADS\"",
-        c2_title: "Inovasi Produksi Berkelanjutan (2024)",
-        c2_desc: "\"Pemanfaatan Sampah Plastik dan Social Media Advertising untuk Mengoptimalkan Produksi dan Distribusi Paving Blok Plastik Grade A Berskala Internasional\""
+        c1_title: "TRANSFORMASI DIGITAL UMKM MELALUI AUTO-INVEST DAN DIGITAL MARKETING BERBASIS GOOGLE ADS DAN META ADS (2025)",
+        c1_desc: "\"LokaVest merupakan platform start-up yang menggabungkan marketplace  dengan sistem auto-invest untuk membantu UMKM meningkatkan stabilitas  keuangan dan jangkauan pasar. Platform ini mengintegrasikan investasi otomatis  dengan pemasaran digital menggunakan Meta Ads dan Google Ads sehingga  memberikan solusi bagi UMKM agar lebih kompetitif di era digital.\"",
+        c2_title: "Pemanfaatan Sampah Plastik dan Social Media Advertising untuk Mengoptimalkan Produksi dan Distribusi Paving Blok Plastik Grade A (2024)",
+        c2_desc: "\"Produk utama adalah paving block ramah lingkungan dari plastik daur ulang, tersedia dalam berbagai warna dan lebih berkualitas dibandingkan paving block konvensional. Dengan harga terjangkau, produk ini mendukung pelestarian lingkungan dan mengurangi sampah plastik. Memenuhi standar SNI 03-0691-1996, produk ini dirancang untuk berbagai proyek infrastruktur.\"",
+        link_c1: "/proposal-lokavest.pdf", 
+        link_c2: "/proposal-paving.pdf"
       },
       footer: {
         sub: "Terbuka untuk posisi Software Engineer Intern atau Freelance.",
@@ -121,8 +123,8 @@ const Portfolio = () => {
         projects_sub: "Software architecture implementations for real-world solutions.",
         research: "Research & Publications",
         research_sub: "Scientific contributions in Digital Transformation and System Audit (2025).",
-        gallery: "Creative Archive",
-        gallery_sub: "Visual documentation and project assets.",
+        gallery: "Academic Archive",
+        gallery_sub: "Competition documentation.",
         comp_detail: "Competitions Detail",
         collab: "Let's Collaborate."
       },
@@ -150,13 +152,18 @@ const Portfolio = () => {
         author_4: "Fourth Author",
         desc_1: "Scientific Journal Publication (2025). Strategic analysis of technology implementation in business transformation.",
         desc_2: "Scientific Journal Publication (2025). Security audit and financial information system controls.",
-        desc_3: "Scientific Journal Publication (2025). Cloud storage infrastructure analysis for enterprise efficiency."
+        desc_3: "Scientific Journal Publication (2025). Cloud storage infrastructure analysis for enterprise efficiency.",
+        link_1: "https://ojs.stmikpontianak.ac.id/sisfotenika/article/view/556/164", // Ganti dengan link Google Scholar/Jurnal asli
+        link_2: "https://ojs.stmikpontianak.ac.id/sisfotenika/article/view/535/158",
+        link_3: "https://ojs.stikombanyuwangi.ac.id/index.php/jikom/article/view/245/150"
       },
       comp: {
         c1_title: "LOKAVEST (2025)",
         c1_desc: "\"Digital Transformation of MSMEs Through Auto-Invest and Ads Algorithm-Based Marketing.\"",
         c2_title: "Sustainable Production Innovation (2024)",
-        c2_desc: "\"Supply Chain and Production Optimization Using Digital Approaches.\""
+        c2_desc: "\"Supply Chain and Production Optimization Using Digital Approaches.\"",
+        link_c1: "/proposal-lokavest.pdf", 
+        link_c2: "/proposal-paving.pdf"
       },
       footer: {
         sub: "Open for Software Engineer Intern or Freelance positions.",
@@ -198,7 +205,7 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50 animate-fade-up">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-bold text-xl tracking-tighter text-slate-900">
-            Rhegysa<span className="text-indigo-600">.Dev</span>
+            <span className="text-indigo-600">Rhegysa </span>Alvyanthi Juniartha
           </div>
           <div className="flex gap-4 items-center">
              {/* Language Toggle */}
@@ -462,7 +469,12 @@ const Portfolio = () => {
           <div className="grid gap-6">
             
             {/* Journal 1 */}
-            <div className="flex gap-6 p-6 bg-white border border-slate-200 rounded-xl items-start shadow-sm hover:border-indigo-300 hover:shadow-md transition-all hover:scale-[1.01] cursor-pointer group">
+            <a 
+              href={t.research.link_1} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex gap-6 p-6 bg-white border border-slate-200 rounded-xl items-start shadow-sm hover:border-indigo-300 hover:shadow-md transition-all hover:scale-[1.01] cursor-pointer group"
+            >
               <div className="shrink-0 w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 group-hover:bg-indigo-100 transition-colors">
                 <ScrollText size={24}/>
               </div>
@@ -478,10 +490,15 @@ const Portfolio = () => {
                   {t.research.desc_1}
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* Journal 2 */}
-            <div className="flex gap-6 p-6 bg-white border border-slate-200 rounded-xl items-start shadow-sm hover:border-indigo-300 hover:shadow-md transition-all hover:scale-[1.01] cursor-pointer group">
+            <a
+              href={t.research.link_2} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex gap-6 p-6 bg-white border border-slate-200 rounded-xl items-start shadow-sm hover:border-indigo-300 hover:shadow-md transition-all hover:scale-[1.01] cursor-pointer group"
+              >
               <div className="shrink-0 w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 group-hover:bg-indigo-100 transition-colors">
                 <ScrollText size={24}/>
               </div>
@@ -497,10 +514,15 @@ const Portfolio = () => {
                   {t.research.desc_2}
                 </p>
               </div>
-            </div>
+            </a>
 
              {/* Journal 3 */}
-             <div className="flex gap-6 p-6 bg-white border border-slate-200 rounded-xl items-start shadow-sm hover:border-indigo-300 hover:shadow-md transition-all hover:scale-[1.01] cursor-pointer group">
+             <a
+              href={t.research.link_3} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex gap-6 p-6 bg-white border border-slate-200 rounded-xl items-start shadow-sm hover:border-indigo-300 hover:shadow-md transition-all hover:scale-[1.01] cursor-pointer group"
+             >
               <div className="shrink-0 w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 group-hover:bg-indigo-100 transition-colors">
                 <ScrollText size={24}/>
               </div>
@@ -516,7 +538,7 @@ const Portfolio = () => {
                   {t.research.desc_3}
                 </p>
               </div>
-            </div>
+            </a>
 
           </div>
         </section>
@@ -613,6 +635,16 @@ const Portfolio = () => {
                  <p className="text-slate-600 text-sm leading-relaxed">
                    {t.comp.c1_desc}
                  </p>
+                <a 
+                    href={t.comp.link_c1} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-indigo-600 transition-colors"
+                 >
+                  <br></br>
+                  <br></br>
+                    <BookOpen size={16} /> Baca Proposal Business Plan
+                 </a>
               </div>
               <div className="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:border-yellow-300 hover:shadow-md transition-all hover:scale-[1.01]">
                  <h4 className="font-bold text-lg text-slate-900 mb-2">{t.comp.c2_title}</h4>
@@ -620,6 +652,16 @@ const Portfolio = () => {
                  <p className="text-slate-600 text-sm leading-relaxed">
                    {t.comp.c2_desc}
                  </p>
+                  <a 
+                    href={t.comp.link_c2} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-slate-700 hover:text-yellow-600 transition-colors"
+                 >
+                  <br></br>
+                  <br></br>
+                    <BookOpen size={16} /> Lihat Dokumen
+                 </a>
               </div>
            </div>
         </section>
