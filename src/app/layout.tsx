@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css"; // 2. Wajib ada agar Tailwind jalan
 
 export const metadata: Metadata = {
-  title: "Portofolio BungaDev",
-  description: "Portofolio Mahasiswi Teknik Informatika",
+  title: "Portofolio Rhegysa",
+  description: "Portofolio Rhegysa, Mahasiswi Teknik Informatika",
 };
 
 export default function RootLayout({
